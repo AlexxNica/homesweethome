@@ -1,26 +1,60 @@
 <html>
   <head>
-    <title>Just links</title>
+    <title>home &middot; sweet &middot; home</title>
     <link rel='stylesheet' type='text/css' href="lib/bootstrap-theme/bootstrap.slate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/nvd3/nv.d3.css">
     <link rel="stylesheet" type="text/css" href="lib/sstooltip/sstooltip.min.css">
     <style type="text/css">
-/*      h4{
+/*      h3{
         text-align: center;
         background-color: #ABC1BA;
         padding: 3px 3px 4px 3px;
         border-radius: 5px;
       }*/
+      body{
+        font-size:15px;
+      }
+      .footer{
+        background-color: #22262B;
+        padding:20px 0px 20px 0px;
+        /*border-top: 2px solid #2C3036;*/
+        position: fixed;
+        left:0px;
+        right:0px;
+        bottom:8px;
+        width: 100%;
+        clear:both;
+        overflow: auto;
+        -moz-box-shadow:    0px 0px 5px 5px #222;
+        -webkit-box-shadow: 0px 0px 5px 5px #222;
+        box-shadow:         0px 0px 5px 5px #222;        
+      }
+      .footer h1{
+        font-weight: 300;
+        font-size: 60px;
+        color: #539592;
+        letter-spacing: 1px;
+        text-shadow: rgba(255, 255, 255, 0.298039) 1px 0px 0px;
+      }
+      h3{
+        font-weight:300;
+      }
+      li{
+        padding:4px 0px 4px 0px;
+      }
+      .span3{
+      }
+      .box{
+        background-color: #1D2023;
+        padding: 10px 10px 15px 15px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="span12" align="center">
-          <h1>Just links!</h1>
-        </div>
         <div class="span3">
-          <h4>Web</h4>
+          <div class="box">
+          <h3>Web</h3>
           <ul>
             <li>
               D3 [ <a href="https://github.com/mbostock/d3/wiki/API-Reference">API</a> | <a href="https://github.com/mbostock/d3/wiki/Gallery">Examples</a> ]
@@ -32,7 +66,7 @@
               <a href="http://refresh-sf.com/yui/">Online YUI Compressor</a>
             </li>
           </ul>
-          <h4>Bootstrap</h4>
+          <h3>Bootstrap</h3>
           <ul>
             <li>
               <a href="http://twitter.github.com/bootstrap/base-css.html">Base CSS</a>
@@ -50,32 +84,21 @@
               <a href="http://bootswatch.com/">Themes</a>
             </li>
           </ul>
+          </div>
         </div>
         <div class="span3">
-          <h4>Pig</h4>
+          <div class="box">
+          <h3>Pig</h3>
           <ul>
             <li>
               <a href="http://pig.apache.org/docs/r0.7.0/piglatin_ref2.html">Pig Latin Reference</a>
             </li>
           </ul>
-          <h4>Twitter Pig</h4>
-          <ul>
-            <li>
-              <a href="http://confluence.local.twitter.com/display/ANALYTICS/Pig">go/pig</a>
-            </li>
-            <li>
-              <a href="http://confluence.local.twitter.com/display/ANALYTICS/Analytics+for+Client+Event+Session+Sequences">Session Sequences</a>
-            </li>
-            <li>
-              <a href="https://cgit.twitter.biz/twadoop/tree/src/main/java/com/twitter/twadoop/pig/piggybank">twadoop.pig.piggybank</a>
-            </li>
-            <li>
-              <a href="https://cgit.twitter.biz/twadoop/tree/src/main/java/com/twitter/twadoop/pig/piggybank/sequence">twadoop.pig.piggybank.sequence</a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="span3">
-          <h4>Twitter Analytics</h4>
+          <div class="box">
+          <h3>Twitter Analytics</h3>
           <ul>
             <li>
               <a href="">Birdbrain</a>
@@ -84,25 +107,54 @@
               Batcave [ <a href="http://batcave.hayaku.service.smf1.twitter.com/">Site</a> | <a href="http://confluence.local.twitter.com/display/ANALYTICS/Batcave">Manual</a> ]
             </li>
           </ul>
-        </div>
-        <div class="span3">
-          <h4>Others</h4>
+          <h3>Twitter Pig</h3>
           <ul>
             <li>
-              <a href="http://www.cafebonappetit.com/menu/your-cafe/twitter/cafes/details/403/twitter">Food</a>
+              <a href="http://confluence.local.twitter.com/display/ANALYTICS/Pig">go/pig</a>
+            </li>
+            <li>
+              <a href="http://confluence.local.twitter.com/display/ANALYTICS/Analytics+for+Client+Event+Session+Sequences">Session Sequences</a>
+            </li>
+            <li>twadoop
+              <ul>
+            <li>
+              <a href="https://cgit.twitter.biz/twadoop/tree/src/main/java/com/twitter/twadoop/pig/piggybank">piggybank</a>
+            </li>
+            <li>
+              <a href="https://cgit.twitter.biz/twadoop/tree/src/main/java/com/twitter/twadoop/pig/piggybank/sequence">piggybank.sequence</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="box">
+          <h3>Others</h3>
+          <ul>
+            <li>
+              <a href="http://www.cafebonappetit.com/menu/your-cafe/twitter/cafes/details/403/twitter">Food at Twitter</a>
             </li>
             <li>
               <a href="http://www.accuweather.com/en/us/san-francisco-ca/94103/weather-forecast/347629">Weather</a>
             </li>
             <li>
-              Work to Home [ <a href="http://www.nextmuni.com/predictor/prediction.shtml?a=sf-muni&r=KT&d=KT__OB1&s=6997&ts=5795">MUNI</a> | <a href="http://nextbart.info/etd.html?station=CIVC&destination=BALB">BART</a> ]
+              Work to Home <br>[ <a href="http://www.nextmuni.com/predictor/prediction.shtml?a=sf-muni&r=KT&d=KT__OB1&s=6997&ts=5795">MUNI</a> | <a href="http://nextbart.info/etd.html?station=CIVC&destination=BALB">BART</a> ]
             </li>
             <li>
-              Home to Work [ <a href="http://www.nextmuni.com/predictor/prediction.shtml?a=sf-muni&r=KT&d=KT__IB1&s=5794&ts=5727">MUNI</a> | <a href="http://nextbart.info/etd.html?station=BALB&destination=CIVC">BART</a> ]
+              Home to Work <br>[ <a href="http://www.nextmuni.com/predictor/prediction.shtml?a=sf-muni&r=KT&d=KT__IB1&s=5794&ts=5727">MUNI</a> | <a href="http://nextbart.info/etd.html?station=BALB&destination=CIVC">BART</a> ]
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
+      <div class="container-fluid footer">
+        <div align="center" style="overflow:hidden" class="row-fluid">
+          <h1>home &middot; sweet &middot; home</h1>
+          "I hope I will save more time than the time I spent on making this page." @kristwongz
+        </div>
+      </div>
+
   </body>
 </html>
